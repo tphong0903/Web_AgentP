@@ -37,7 +37,7 @@ body{
 }
 
 #nav{
-    display: inline-block;
+    display: block;
     line-height: 38px;
     
 }
@@ -85,17 +85,25 @@ body{
 #header p:hover a>i{
     color:#000;
 }
-#nav > li:hover >a{
+#nav > li:hover{
     color:#000;
     background-color:#ccc;
 }
-#nav > li:hover >a>i{
+#nav > li >a:hover{
+    color:#000;
+}
+#nav > li >a:hover>i{
     color:#000;
 }
 #home{
+    box-sizing: border-box;
     margin-top: 46px;
     padding-bottom: 625px;
-    background: url('/assets/z3913314363949_d22831a7ed6f48b3f0c145dac1517316\ \(1\).jpg') center/ cover no-repeat;
+    background: url('/assets/z3913314363949_d22831a7ed6f48b3f0c145dac1517316\ \(1\).jpg');
+    background-size: cover;
+    background-position-x: 60%;
+    background-repeat: no-repeat;
+
 }
 #home .text-content{
     color: #fff;
@@ -125,6 +133,7 @@ body{
     margin-top: 5%;
     width: 100%;
     height: 300px;
+    box-sizing: border-box;
 }
 .member-list{
     padding-top: 50px;
@@ -134,7 +143,7 @@ body{
     float: left;
     text-align: center;
     width: calc(100%/4);
-    height: 100%;
+    height: 50%;
  }
  .card{
     margin: 50px;
@@ -314,10 +323,13 @@ body{
 }
 @media(max-width:740px)
 {
+    
     #nav >li{
+        width: 100%;
         display:block;
         position: relative;
     }
+
     #header{
         position:fixed;
         top:0;
@@ -326,6 +338,12 @@ body{
         height: 46px;
         background-color: #2d2d2d82;
         overflow: hidden;
+    }
+    #header .menu-btn{
+        float:right;
+        right: 0;
+        top:0;
+        position: absolute;
     }
     #header .Name{
         font-weight:800;
@@ -340,7 +358,7 @@ body{
 
 
     .about{
-        height: 1250px;
+        height: 1200px;
     }
     .introduce{
         margin-top: 5%;
@@ -357,13 +375,13 @@ body{
         width: calc(100%/1);
     }
      .member-img{
-        width: 90%;
+        width: 80%;
         margin-top: 15px;
         border-radius: 4px;
     }
     .infor{
         padding-left: 5%;
-        padding-top: 15px;
+        margin-top: 20%;
         float: left;
         width: calc(100%/1);
     }
