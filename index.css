@@ -143,9 +143,7 @@ body{
     float: left;
     text-align: center;
     width: calc(100%/4);
-    height: 50%;
     margin-bottom: 5%;
-    
  }
  .card{
     margin: 50px;
