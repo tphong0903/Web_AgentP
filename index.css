@@ -376,10 +376,12 @@ body{
         
         text-align: center;
         width: calc(100%/1);
+        box-sizing: border-box;
     }
      .member-img{
         width: 80%;
         border-radius: 50px;
+        box-sizing: border-box;
     }
     .infor{
         padding-left: 5%;
@@ -397,7 +399,7 @@ body{
         width: 90%;
     }
     #game{
-        height: 850px;
+        height: 900px;
     }
     .lol,.valo{
         width: calc(100%/1);
